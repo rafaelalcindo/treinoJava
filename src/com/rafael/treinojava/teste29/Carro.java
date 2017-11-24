@@ -1,14 +1,23 @@
 
-package com.rafael.treinojava.teste25;
+package com.rafael.treinojava.teste29;
 
 
 public class Carro {
-    
+     
     String marca;
     String modelo;
     int numPassageiros;
     double capCombustivel;
     double consumoCombustivel;
+    
+    Carro(){
+        System.out.println("Classe carro foi instanciada");
+        numPassageiros = 4;
+    }
+    
+    Carro(String marca_){
+        marca = marca_;
+    }
     
    void exibirAutonomia(){
        System.out.println("A autonomia do carro é: "+ capCombustivel * consumoCombustivel +" km");
@@ -23,6 +32,4 @@ public class Carro {
        double qtdCombustivel = km / consumoCombustivel;
        return qtdCombustivel;
    }
-   
-   
 }
